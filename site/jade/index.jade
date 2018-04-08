@@ -1,0 +1,250 @@
+//- styleguide.jade
+- var title = "Agung & Aca"
+- var page = "Homepage"
+include ./includes/variable.jade
+
+doctype html
+html(lang="en")
+
+	// html head
+	head
+		include ./includes/head.jade
+
+	// body
+	body(data-spy="scroll" data-target=".nav-menu" data-offset="100")
+		// page header
+		include ./includes/header.jade
+
+		// page main
+		main(role="main").resize
+			audio(autoplay control loop)
+				source(src="img/sound-01.mp3" type="audio/mpeg")
+			.sound-toggle
+				span.fa.fa-music
+			section.home#home
+				.slider-component
+					.slider-wrap
+						.slider-text
+							h1 Agung & Aca
+						.slider-img
+							img(data-lazy="img/common/slider-01.jpeg")
+					.slider-wrap
+						.slider-img
+							img(data-lazy="img/common/slider-03.jpeg")
+					.slider-wrap
+						.slider-img
+							img(data-lazy="img/common/slider-01.jpeg")
+				.mouse-down
+			section.counter#counter
+				.container
+					.title
+						h2 Count Down
+						.description
+							p Countdown to our wedding day. The day that Agung & Aca will say their promise to love and take care each other until death seperate them apart.
+					.counter-init
+			section.parallax.story#story(data-image="http://envirra.com/themes/espresso/wp-content/uploads/2015/03/13153244495_bf016e61c0_o.jpg")
+				.container
+					.title
+						h2 Story
+						.description
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam aspernatur accusamus, labore expedita accusantium odit, cum cumque minima a, id magni? Quis aspernatur necessitatibus pariatur ex vitae recusandae perferendis.
+					.story-component
+						.img-wrap
+							img(src="img/common/story-01.jpg")
+						.story-wrap
+							h3 Kariska Iswari Yasa
+							.description
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, possimus eos mollitia quae magni repellendus sunt incidunt nam omnis aut cum nobis porro, similique doloremque cumque, adipisci sed sapiente temporibus?
+					.story-component
+						.story-wrap
+							h3 Agung Dwi Lambang Gito Santoso
+							.description
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, possimus eos mollitia quae magni repellendus sunt incidunt nam omnis aut cum nobis porro, similique doloremque cumque, adipisci sed sapiente temporibus?
+						.img-wrap
+							img(src="img/common/story-02.jpg")
+			section.timeline
+				.container
+					.timeline-component
+						.item
+							.icon
+								span.fa.fa-comments
+							.text-wrapper
+								h2 Perkenalan
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corporis deleniti quaerat rerum nesciunt, cupiditate impedit? Fuga laudantium earum, quam corrupti dicta illo mollitia sit quibusdam pariatur, soluta enim consequuntur.
+						.item.right
+							.icon
+								span.fa.fa-handshake
+							.text-wrapper
+								h2 Perkenalan
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corporis deleniti quaerat rerum nesciunt, cupiditate impedit? Fuga laudantium earum, quam corrupti dicta illo mollitia sit quibusdam pariatur, soluta enim consequuntur.
+						.item
+							.icon
+								span.fa.fa-comments
+							.text-wrapper
+								h2 Perkenalan
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corporis deleniti quaerat rerum nesciunt, cupiditate impedit? Fuga laudantium earum, quam corrupti dicta illo mollitia sit quibusdam pariatur, soluta enim consequuntur.
+						.item.right
+							.icon
+								span.fa.fa-comments
+							.text-wrapper
+								h2 Perkenalan
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corporis deleniti quaerat rerum nesciunt, cupiditate impedit? Fuga laudantium earum, quam corrupti dicta illo mollitia sit quibusdam pariatur, soluta enim consequuntur.
+							
+			section.location.parallax#location(data-image="img/common/parallax-01.jpg")
+				.container
+					.title
+						h2 Location
+						.description
+							p Lokasi pernihkahaan akan di selenggarakan di Gedung DISEN, Desa Cisaat, Kota Sukabumi. Kota Sukabumi terletak di 100 KM sebelah tenggara dari Kota Bogor, 50 KM sebelah Barat Daya dari Kota Cianjur dan 100 KM dari Kota Bandung.
+			section.location-map#map
+
+			section.wishlist#wishlist
+				.container
+					.title
+						h2 Wishlist
+						.description
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam aspernatur accusamus, labore expedita accusantium odit, cum cumque minima a, id magni? Quis aspernatur necessitatibus pariatur ex vitae recusandae perferendis.
+					.wishlist-component
+						.item.granted
+							.card
+								.img-wrapper
+									img(src="img/common/wishlist-01.jpg")
+								.info-wrapper
+									.title
+										h2 Kompor Induksi
+									.links
+										a(href="#") 
+											| Tokopedia
+											i.fa.fa-external-link-square-alt
+										a(href="#")
+											| Bukalapak
+											i.fa.fa-external-link-square-alt
+							.granted-by
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+						.item
+							.card
+								.img-wrapper
+									img(src="img/common/wishlist-02.jpg")
+								.info-wrapper
+									.title
+										h2 Kompor Induksi
+									.links
+										a(href="#") 
+											| Tokopedia
+											i.fa.fa-external-link-square-alt
+										a(href="#")
+											| Bukalapak
+											i.fa.fa-external-link-square-alt
+						.item
+							.card
+								.img-wrapper
+									img(src="img/common/wishlist-01.jpg")
+								.info-wrapper
+									.title
+										h2 Kompor Induksi
+									.links
+										a(href="#") 
+											| Tokopedia
+											i.fa.fa-external-link-square-alt
+										a(href="#")
+											| Bukalapak
+											i.fa.fa-external-link-square-alt
+						.item
+							.card
+								.img-wrapper
+									img(src="img/common/wishlist-02.jpg")
+								.info-wrapper
+									.title
+										h2 Kompor Induksi
+									.links
+										a(href="#") 
+											| Tokopedia
+											i.fa.fa-external-link-square-alt
+										a(href="#")
+											| Bukalapak
+											i.fa.fa-external-link-square-alt
+						.item.granted
+							.card
+								.img-wrapper
+									img(src="img/common/wishlist-01.jpg")
+								.info-wrapper
+									.title
+										h2 Kompor Induksi
+									.links
+										a(href="#") 
+											| Tokopedia
+											i.fa.fa-external-link-square-alt
+										a(href="#")
+											| Bukalapak
+											i.fa.fa-external-link-square-alt
+							.granted-by
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+						.item.granted
+							.card
+								.img-wrapper
+									img(src="img/common/wishlist-02.jpg")
+								.info-wrapper
+									.title
+										h2 Kompor Induksi
+									.links
+										a(href="#") 
+											| Tokopedia
+											i.fa.fa-external-link-square-alt
+										a(href="#")
+											| Bukalapak
+											i.fa.fa-external-link-square-alt
+							.granted-by
+								a(href="#")
+									img(src="img/common/people-dummy.png" alt="people-01")
+								
+						
+							
+			section.gallery#gallery
+				.container
+					.title
+						h2 Gallery
+						.description
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam aspernatur accusamus, labore expedita accusantium odit, cum cumque minima a, id magni? Quis aspernatur necessitatibus pariatur ex vitae recusandae perferendis.				
+				.gallery-component
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=40")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=21")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=62")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=73")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=24")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=15")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=886")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=667")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=28")
+					.img-wrapper
+						img(src="https://picsum.photos/200/300?image=119")
+
+		footer
+			span made with
+			span.fa.fa-heart
+			span by
+			a(href="https://www.instagram.com/agungdlgs/" target="_blank") agungdlgs
+		// page script
+		include ./includes/script.jade

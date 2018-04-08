@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+
+		<!-- meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>MCI HTML SLICING</title>
+		<meta name="description" content="OEP">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- icons -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="intro/img/favicon.png">
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="intro/css/main.css">
+		<link rel="stylesheet" href="intro/js/vendor/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="intro/js/vendor/selectpicker/css/bootstrap-select.min.css">
+	</head>
+	<body>
+
+		<!-- header -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="styleguide.html"><strong>PROJECTX</strong> HTML SLICING</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class='responsive-toggle' href='#'>Toggle Responsive</a></li>
+						<li><div class="framesize">0 x 0</div></li>
+						<li><a class="readme version" title="Change Log" href="#" id="openBtn" data-toggle="modal" data-target="#myModal">V.0.3 - 12 March 2015 (18:00)</a></li>
+						<li class="open" ><a id="newwindow" href="javascript:;">Open page in new window</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- body -->
+		<div class="maincontent container-fluid">
+			<div class="row">
+				<div class="sidebar">
+
+					<!-- title -->
+					<span class="header">SELECT PAGE</span>
+
+					<!-- navigation -->
+					<ul class="nav nav-sidebar">
+						<li class="active brown">
+							<a href="javascript:;" data-frame="site/index.html">
+								<span class="icon"><i class="glyphicon glyphicon-home"></i></span>
+								<span class="title">Dashboard</span>
+							</a>
+						</li>
+						<!--
+						<li class="red">
+							<a href="javascript:;" data-frame="site/styleguide.html">
+								<span class="icon"><i class="glyphicon glyphicon-th-list"></i></span>
+								<span class="title">Styleguide</span>
+							</a>
+						</li>
+						<li class="blue">
+							<a href="javascript:;" data-frame="site/event.html">
+								<span class="icon"><i class="glyphicon glyphicon-list-alt"></i></span>
+								<span class="title">Event</span>
+							</a>
+						</li>
+						<li class="purple">
+							<a href="javascript:;" data-frame="site/media.html">
+								<span class="icon"><i class="glyphicon glyphicon-envelope"></i></span>
+								<span class="title">Media</span>
+							</a>
+						</li>
+
+						<li class="green">
+							<a href="javascript:;" data-frame="site/admission.html">
+								<span class="icon"><i class="glyphicon glyphicon-book"></i></span>
+								<span class="title">Admission</span>
+							</a>
+						</li>
+						<li class="green">
+							<a href="javascript:;" data-frame="site/hcc.html">
+								<span class="icon"><i class="glyphicon glyphicon-send"></i></span>
+								<span class="title">HCC</span>
+							</a>
+						</li>
+
+						<li class="green">
+							<a href="javascript:;" data-frame="site/about.html">
+								<span class="icon"><i class="glyphicon glyphicon-book"></i></span>
+								<span class="title">About</span>
+							</a>
+						</li>
+						<li class="red">
+							<a href="javascript:;" data-frame="site/sitemap.html">
+								<span class="icon"><i class="glyphicon glyphicon-home"></i></span>
+								<span class="title">Sitemap</span>
+							</a>
+						</li>
+
+						<li class="blue">
+							<a href="javascript:;" data-frame="site/imda.html">
+								<span class="icon"><i class="glyphicon glyphicon-list-alt"></i></span>
+								<span class="title">IMDA Masterplan</span>
+							</a>
+						</li>
+						<li class="purple">
+							<a href="javascript:;" data-frame="site/imda-keypolicies.html">
+								<span class="icon"><i class="glyphicon glyphicon-envelope"></i></span>
+								<span class="title">IMDA Key Policies</span>
+							</a>
+						</li>
+						<li class="darkblue">
+							<a href="javascript:;" data-frame="site/imda-factsfigures.html">
+								<span class="icon"><i class="glyphicon glyphicon-send"></i></span>
+								<span class="title">IMDA Facts And Figures</span>
+							</a>
+						</li>
+						<li class="orange">
+							<a href="javascript:;" data-frame="site/imda-newsevents.html">
+								<span class="icon"><i class="glyphicon glyphicon-align-left"></i></span>
+								<span class="title">IMDA News And Events</span>
+							</a>
+						</li>
+						<li class="cyan">
+							<a href="javascript:;" data-frame="site/pdpa.html">
+								<span class="icon"><i class=" glyphicon glyphicon-folder-open"></i></span>
+								<span class="title">PDPA Main Legislation</span>
+							</a>
+						</li>
+						<li class="brown">
+							<a href="javascript:;" data-frame="site/pdpa-keypolicies.html">
+								<span class="icon"><i class="glyphicon glyphicon-th-list"></i></span>
+								<span class="title">PDPA Key Policies</span>
+							</a>
+						</li>
+						<li class="darkblue">
+							<a href="javascript:;" data-frame="site/pdpa-newsevents.html">
+								<span class="icon"><i class="glyphicon glyphicon-send"></i></span>
+								<span class="title">PDPA News and Events</span>
+							</a>
+						</li>
+						<li class="green">
+							<a href="javascript:;" data-frame="site/about.html">
+								<span class="icon"><i class="glyphicon glyphicon-book"></i></span>
+								<span class="title">About Us</span>
+							</a>
+						</li>
+						<li class="red">
+							<a href="javascript:;" data-frame="site/career.html">
+								<span class="icon"><i class="glyphicon glyphicon-home"></i></span>
+								<span class="title">Career</span>
+							</a>
+						</li>
+						<li class="blue">
+							<a href="javascript:;" data-frame="site/careervacacies.html">
+								<span class="icon"><i class="glyphicon glyphicon-list-alt"></i></span>
+								<span class="title">Career Vacancies</span>
+							</a>
+						</li>
+						<li class="red">
+							<a href="javascript:;" data-frame="site/feedback.html">
+								<span class="icon"><i class="glyphicon glyphicon-home"></i></span>
+								<span class="title">Feedback</span>
+							</a>
+						</li>
+						<li class="blue">
+							<a href="javascript:;" data-frame="site/agencies.html">
+								<span class="icon"><i class="glyphicon glyphicon-align-right"></i></span>
+								<span class="title">Agencies</span>
+							</a>
+						</li>
+						<li class="brown">
+							<a href="javascript:;" data-frame="site/policies.html">
+								<span class="icon"><i class="glyphicon glyphicon-th-list"></i></span>
+								<span class="title">Policies</span>
+							</a>
+						</li>
+						<li class="red">
+							<a href="javascript:;" data-frame="site/sitemap.html">
+								<span class="icon"><i class="glyphicon glyphicon-home"></i></span>
+								<span class="title">Sitemap</span>
+							</a>
+						</li>
+						<li class="blue">
+							<a href="javascript:;" data-frame="site/usefullinks.html">
+								<span class="icon"><i class="glyphicon glyphicon-list-alt"></i></span>
+								<span class="title">Useful Links</span>
+							</a>
+						</li>-->
+
+					</ul>
+					<!--<div class="info">
+
+						<a class="readme" title="Change Log" href="#" id="openBtn" data-toggle="modal" data-target="#myModal">
+							<i class="glyphicon glyphicon-info-sign"></i>
+						</a>
+
+						<span class="version">V.0.3 - 12 March 2015 (18:00)</span>
+					</div>-->
+				</div>
+				<div class="main">
+					<div class="responsive-nav">
+						<h1>Mobile Responsive</h1>
+						<a href='#' class='vp mobile'> Mobile </a>
+						<a href="#" class='vp tablet'> Tablet </a>
+						<a href="#" class='portrait-toggle'> Portrait </a>
+						<a href="#" class='landscape-toggle'> Landscape </a>
+						<span class='zoom'> Zoom Tool </span>
+						<a href='#' class='zoom inn'> + </a>
+						<a href="#" class='zoom out'> - </a>
+						<span> 320px  x 568px </span>
+					</div>
+					<span>
+						<div class="viewport-frame">
+							<iframe id="leframe" src="site/index.html"></iframe>
+						</div>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal iframe -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  	<div class="modal-dialog modal-lg">
+		    	<div class="modal-content">
+			      	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			       		<h4 class="modal-title" id="myModalLabel">CHANGE LOG</h4>
+			      	</div>
+			      	<div class="modal-body">
+			        	<iframe src="site/changelog.html" style="zoom:0.8" width="100%" frameborder="0"></iframe>
+			      	</div>
+			      	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+		    	</div>
+		  	</div>
+		</div>
+
+		<!-- script -->
+		<script src="intro/js/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="intro/js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="intro/js/vendor/selectpicker/js/bootstrap-select.min.js"></script>
+		<script src="intro/js/vendor/jquery.nicescroll-master/jquery.nicescroll.min.js"></script>
+		<script src="intro/js/main.js"></script>
+	</body>
+</html>
