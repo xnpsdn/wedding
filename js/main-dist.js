@@ -1,1 +1,1 @@
-$(function(){var n,i;n=new Wedding.UIComponents,i=new Wedding.MapInteraction,n.init(),i.init()});
+"use strict";$(function(){var n,i;n=new Wedding.UIComponents,i=new Wedding.MapInteraction,n.init(),i.init()});
