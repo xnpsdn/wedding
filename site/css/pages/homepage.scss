@@ -5,7 +5,8 @@ section {
         padding: 0;
         height: 100vh;
         width: 100vw;
-		position: relative;
+        position: relative;
+        
 		.mouse-down {
 			opacity: 1;
 			transition: all .3s;
@@ -33,16 +34,29 @@ section {
 				background: white;
 				animation: mouse-ball 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 			}
-		}
+        }
+        
         .slider-component {
             .slider-wrap {
                 .slider-text {
                     position: absolute;
+                    opacity: 0;
                 }
                 .slider-img {
                     width: 100vw;
                     height: 100vh;
                     position: relative;
+
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        background:rgba(177, 122, 115, 0.17);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
                     img {
                         position: absolute;
                         left: 50%;

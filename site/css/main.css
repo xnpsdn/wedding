@@ -2438,11 +2438,21 @@ body {
             -webkit-animation: mouse-ball 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
             animation: mouse-ball 1.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
         body main[role="main"] section.home .slider-component .slider-wrap .slider-text {
-          position: absolute; }
+          position: absolute;
+          opacity: 0; }
         body main[role="main"] section.home .slider-component .slider-wrap .slider-img {
           width: 100vw;
           height: 100vh;
           position: relative; }
+          body main[role="main"] section.home .slider-component .slider-wrap .slider-img::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgba(177, 122, 115, 0.17);
+            position: absolute;
+            top: 0;
+            left: 0; }
           body main[role="main"] section.home .slider-component .slider-wrap .slider-img img {
             position: absolute;
             left: 50%;
