@@ -2373,6 +2373,11 @@ body {
           transition: all .3s ease; }
           body main[role="main"] section.timeline .timeline-component .text-wrapper h2 {
             margin-top: 0; }
+            body main[role="main"] section.timeline .timeline-component .text-wrapper h2 small {
+              font-size: 12px;
+              font-family: "Raleway", sans-serif;
+              letter-spacing: 1px;
+              color: #F1A9A0; }
           body main[role="main"] section.timeline .timeline-component .text-wrapper p {
             margin-bottom: 0px; }
             body main[role="main"] section.timeline .timeline-component .text-wrapper p:last-of-type {
